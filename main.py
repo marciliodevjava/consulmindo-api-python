@@ -1,7 +1,7 @@
 import requests
 
 from diretorio import nomes_hoteis
-from diretorio.url_base import URL_GET_LOGIN, URL_GET_HOTEIS, URL_SITES
+from diretorio.url_base import URL_LOGIN, URL_HOTEIS, URL_SITES
 
 LIST_ID_SITES = nomes_hoteis.NOMES_ID_HOTEIS
 
@@ -14,7 +14,7 @@ login = {
     "senha": "123"
 }
 
-resposta_login = requests.request('POST', URL_GET_LOGIN, json=login)
+resposta_login = requests.request('POST', URL_LOGIN, json=login)
 
 if resposta_login.status_code == 200:
     resposta = resposta_login.json()
@@ -25,7 +25,7 @@ headers = {
     'Authorization': TOKEN
 }
 
-resposta_hoteis = requests.request('GET', URL_GET_HOTEIS, headers=headers)
+resposta_hoteis = requests.request('GET', URL_HOTEIS, headers=headers)
 
 if resposta_hoteis.status_code == 200:
     hoteis = resposta_hoteis.json()

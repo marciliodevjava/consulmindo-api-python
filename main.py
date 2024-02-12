@@ -1,12 +1,7 @@
 import requests
 
-from diretorio import nomes_hoteis
 from diretorio.url_base import URL_HOTEIS, URL_SITES
 from login.login_headers import headers
-
-LIST_ID_SITES = nomes_hoteis.NOMES_ID_HOTEIS
-
-resposta = None
 
 resposta_hoteis = requests.request('GET', URL_HOTEIS, headers=headers)
 

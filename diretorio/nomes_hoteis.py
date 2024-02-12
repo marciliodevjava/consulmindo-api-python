@@ -1,4 +1,4 @@
-NOMES_ID_sites = [
+NOMES_ID_HOTEIS = [
     {
         'site_id': 'omega'
     },

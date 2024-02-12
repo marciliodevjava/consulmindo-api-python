@@ -1,12 +1,14 @@
 import requests
 
+from diretorio import nomes_hoteis
+
 URL_BASE = 'http://127.0.0.1:5000'
 HOTEIS = '/hoteis'
 LOGIN = '/login'
 
 URL_GET_HOTEIS = URL_BASE + HOTEIS
 URL_GET_LOGIN = URL_BASE + LOGIN
-LIST_ID_SITES = nomes_sites.NOMES_ID_sites
+LIST_ID_SITES = nomes_hoteis.NOMES_ID_sites
 
 resposta = None
 BEARER = 'Bearer '

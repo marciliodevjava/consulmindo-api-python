@@ -4,7 +4,6 @@ from diretorio.nomes_sites import NOMES_SITES
 from diretorio.url_base import URL_SITE, URL_SITES
 from login.login_headers import headers
 
-requisicao = None
 SITE_URL = list()
 SITE_ID = list()
 

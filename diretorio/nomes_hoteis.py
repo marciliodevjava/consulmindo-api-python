@@ -25,5 +25,8 @@ NOMES_ID_HOTEIS = [
     },
     {
         'site_id': 'oscar'
+    },
+{
+        'site_id': 'papa'
     }
 ]

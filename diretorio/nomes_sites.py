@@ -38,5 +38,37 @@ NOMES_SITES = [
     {
         "url": "www.sofa.com.br",
         "nome": "Sofa SA"
+    },
+    {
+        "url": "www.choki.com.br",
+        "nome": "Choki SA"
+    },
+    {
+        "url": "www.Dell.com.br",
+        "nome": "Dell SA"
+    },
+    {
+        "url": "www.core.com.br",
+        "nome": "Core LTDA"
+    },
+    {
+        "url": "www.parana.com.br",
+        "nome": "Parana CIA LTDA SA"
+    },
+    {
+        "url": "www.king.com.br",
+        "nome": "King CIA"
+    },
+    {
+        "url": "www.saber.com.br",
+        "nome": "Saber LTDA"
+    },
+    {
+        "url": "www.free.com.br",
+        "nome": "Free SA"
+    },
+    {
+        "url": "www.obs.com.br",
+        "nome": "Obs CIA SA LTDA"
     }
 ]

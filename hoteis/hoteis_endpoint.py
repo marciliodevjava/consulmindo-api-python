@@ -35,3 +35,7 @@ if len(NOMES_ID_HOTEIS) == len(DADOS_HOTEIS):
             dados_cadastro_hotel = requsicao_post.json()
             id = dados_cadastro_hotel['hotel']['hotel_id']
             LIST_HOTEL_DELETE.append(id)
+
+for id in LIST_HOTEL_DELETE:
+    URL_GET = f'{URL_HOTEIS}/{id}'
+    requisicao_delete = requests.request('DELETE', URL_GET, headers=headers)

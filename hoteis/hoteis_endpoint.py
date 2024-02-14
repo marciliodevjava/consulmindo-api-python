@@ -1,5 +1,7 @@
 import requests
 
+from diretorio.dados_hoteis import DADOS_HOTEIS
+from diretorio.nomes_hoteis import NOMES_ID_HOTEIS
 from diretorio.url_base import URL_HOTEIS
 from login.login_headers import headers
 
@@ -22,3 +24,8 @@ for hotel in LIST_ID_HOTEL:
     if requesicao_id.status_code == 200:
         hotel_json = requesicao_id.json()
         print(hotel_json['hotel'])
+
+if len(NOMES_ID_HOTEIS) == len(DADOS_HOTEIS):
+    for hotel in NOMES_ID_HOTEIS and dados in DADOS_HOTEIS:
+        URL_GET = f'{URL_HOTEIS}/{hotel}'
+        requsicao_post= requests.request('POST', URL_GET)
